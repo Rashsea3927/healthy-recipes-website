@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [new URL('https://cdn.sanity.io/**')],
   },
+  experimental: {
+    turbopackScopeHoisting: false,
+  },
 };
 
 export default nextConfig;
