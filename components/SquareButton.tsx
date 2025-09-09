@@ -21,7 +21,9 @@ const SquareButton = ({ size, text = 'Browse recipes' }: SquareButtonProps) => {
         }
       )}
     >
-      <Link href='/recipes'>{text}</Link>
+      <Link href='/recipes' className='focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-900'>
+        {text}
+      </Link>
     </Button>
   );
 };

@@ -39,8 +39,10 @@
   --color-orange-500: hsl(21, 98%, 71%);
   --color-teal-500: hsl(170, 40%, 48%);
   --color-indigo-500: hsl(230, 62%, 64%);
+  --color-skeleton: hsl(150, 10%, 89%);
 
   /* Drop Shadow */
+  --shadow-md: 0 8px 16px -9px hsla(164, 45%, 16%, 0.16);
   --shadow-lg: 0 12px 22px 0 hsla(166, 22%, 28%, 0.16);
   --shadow-clear: 0 1px 0 0 hsl(150, 10%, 89%);
 }
@@ -66,6 +68,21 @@
   @apply font-nunito-sans text-xl text-green-600 leading-loose tracking-tiny font-medium;
 }
 
+.text-preset-7 {
+  @apply text-lg leading-normal tracking-normal font-semibold;
+}
+
+.text-preset-8 {
+  @apply font-nunito-sans text-base leading-normal tracking-normal font-bold;
+}
+
 .text-preset-9 {
-  @apply font-nunito-sans text-base leading-normal tracking-normal font-medium text-green-900;
+  @apply font-nunito-sans text-base leading-normal tracking-normal font-medium;
+}
+
+.display-inherit {
+  display: inherit;
+  grid-template-rows: inherit;
+  grid-row: inherit;
+  gap: 0;
 }

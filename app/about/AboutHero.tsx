@@ -34,8 +34,8 @@ const AboutHero = () => {
           <Image
             className='w-full h-auto rounded-md md:rounded-xl'
             src={AboutHeroSmallImage.src}
-            width={343}
-            height={333}
+            width={686}
+            height={667}
             alt=''
           />
         </picture>

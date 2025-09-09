@@ -17,13 +17,16 @@ const Footer = () => {
         <ul className='flex gap-4 justify-center mb-6'>
           {footerAccountsList.map((account) => (
             <li key={account.name}>
-              <Link href={account.href} className='flex items-center gap-6'>
-                <Image className='w-auto h-[22px]' src={account.icon} alt={account.name} width={22} height={22} />
+              <Link
+                href={account.href}
+                className='flex items-center gap-6 outline-none rounded-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-900'
+              >
+                <Image className='w-auto h-[22px]' src={account.icon} alt={account.name} height={22} />
               </Link>
             </li>
           ))}
         </ul>
-        <p className='text-preset-9 text-center'>Made with ❤️ and 🥑</p>
+        <p className='text-preset-9 text-green-900 text-center'>Made with ❤️ and 🥑</p>
       </div>
     </footer>
   );

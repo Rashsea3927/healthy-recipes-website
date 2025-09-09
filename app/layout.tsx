@@ -1,6 +1,5 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import ReadyToCook from '@/components/ReadyToCook';
 import type { Metadata } from 'next';
 import { Nunito, Nunito_Sans } from 'next/font/google';
 import './globals.css';
@@ -30,10 +29,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${nunito.className} ${nunitoSans.variable} antialiased bg-green-100`}>
         <Header />
-        <main>
-          {children}
-          <ReadyToCook />
-        </main>
+        {children}
         <Footer />
       </body>
     </html>

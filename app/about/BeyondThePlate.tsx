@@ -32,8 +32,8 @@ const BeyondThePlate = () => {
             <Image
               className='w-full h-auto align-bottom'
               src={AboutBeyondPlanetSmallImage.src}
-              width={343}
-              height={184}
+              width={686}
+              height={369}
               alt='About Beyond the Plate'
             />
           </picture>

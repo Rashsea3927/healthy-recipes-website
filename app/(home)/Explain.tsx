@@ -23,7 +23,7 @@ const Explain = () => {
         <div className='overflow-hidden rounded-xl'>
           <picture>
             <source srcSet={ExplainLargeImage.src} media='(min-width: 768px)' />
-            <Image className='w-full h-auto' src={ExplainSmallImage.src} width={343} height={243} alt='' />
+            <Image className='w-full h-auto' src={ExplainSmallImage.src} width={686} height={487} alt='' />
           </picture>
         </div>
       </div>

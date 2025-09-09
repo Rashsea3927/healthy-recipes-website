@@ -29,8 +29,8 @@ const Hero = () => {
                 <Image
                   className='w-full h-auto'
                   src={HeroSmallImage.src}
-                  width={343}
-                  height={200}
+                  width={686}
+                  height={400}
                   alt='Healthy meals, zero fuss'
                 />
               </picture>
