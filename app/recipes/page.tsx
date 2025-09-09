@@ -10,6 +10,11 @@ type SeachParamsType = {
   q?: string;
 };
 
+export const metadata = {
+  title: 'Recipes | Healthy Recipe Finder',
+  description: 'Explore a variety of healthy recipes tailored to your preferences.',
+};
+
 const RecipesPage = async ({ searchParams }: { searchParams: SeachParamsType }) => {
   const { prepTime, cookTime, q } = await searchParams;
 

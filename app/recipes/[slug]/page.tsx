@@ -9,8 +9,19 @@ import {
 } from '@/components/ui/breadcrumb';
 import { getAllRecipes, getRecipeDetails } from '@/sanity/lib/query';
 import { Recipe, RecipeDetailType } from '@/types';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import MoreRecipes from './MoreRecipes';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const slug = (await params).slug;
+  const recipe: RecipeDetailType = await getRecipeDetails(slug);
+
+  return {
+    title: `${recipe.title} | Healthy Recipe Finder`,
+    description: recipe.overview,
+  };
+}
 
 const RecipeDetailPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
