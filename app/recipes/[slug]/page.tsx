@@ -23,6 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+export async function generateStaticParams() {
+  const recipes: Recipe[] = await getAllRecipes({});
+  return recipes.map((recipe) => ({
+    slug: recipe.slug.current,
+  }));
+}
+
 const RecipeDetailPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const recipe: RecipeDetailType = await getRecipeDetails(slug);
